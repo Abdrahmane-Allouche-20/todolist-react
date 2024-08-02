@@ -152,7 +152,8 @@ function Todo() {
                     type="text"
                     value={textEdit}
                     onChange={(e) => setEditText(e.target.value)}
-                    className="p-1 w-10/12 text-base md:text-2xl font-bold border-2 rounded-lg"
+                    className={`p-1 w-10/12 outline outline-white  border-[${color}] text-base md:text-2xl font-bold border-2 rounded-lg`}
+                    style={{borderColor:color}}
                   />
                 ) : (
                   <span
